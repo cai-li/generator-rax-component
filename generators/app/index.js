@@ -155,7 +155,7 @@ module.exports = class extends Generator {
       this.fs.copy(this.templatePath('app/babel.config.js'), this.destinationPath('babel.config.js'))
       this.fs.copy(this.templatePath('app/eslintignore'), this.destinationPath('.eslintignore'))
       this.fs.copy(this.templatePath('app/gitignore'), this.destinationPath('.gitignore'))
-      this.fs.copy(this.templatePath('app/eslintrc'), this.destinationPath('.eslintrc'))
+      this.fs.copy(this.templatePath('app/eslintrc'), this.destinationPath('.eslintrc.js'))
       this.fs.copy(this.templatePath('app/LICENSE'), this.destinationPath('LICENSE'))
       this.fs.copyTpl(this.templatePath('app/package.json_vm'), this.destinationPath('package.json'), this.obj)
 
